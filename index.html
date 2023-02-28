@@ -5,9 +5,9 @@
 
     <link rel="stylesheet" href="styleheader.css" />
     <link rel="stylesheet" href="stylefooter.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 
-    <title>To-Do-List</title>
+    <title>Sticky Notes</title>
     <link rel="stylesheet" href="style.css">
     <!-- Paste here -->
 
@@ -37,11 +37,29 @@
     <!-- HEADER END -->
     <!-- MAIN START -->
     <div class="main">
-      
+      <div id="modal">
+        <div id="inner_modal">
+          <textarea name="" id="user_input"  maxlength="150" placeholder="Note..."></textarea>
+          <i class="fa-solid fa-xmark" id="hide"></i>
+        </div>
+      </div>
+      <header>
+        <div class="container1">
+          <div id="header"><h1><i class="fa-solid fa-note-sticky"></i>Sticky Notes</h1>
+          </div>
+          <button id="create_note">Create Note</button>
+        </div>
+        </header>
+        
+        <section>
+          <div class="container2">
+            <div id="all_notes"></div>
+          </div>
+        </section>
         
       </div>
-      <!-- <button class="clear" >Clear All</button> -->
-   </div>
+  
+  
     
     <!-- MAIN END -->
     <!-- footer start -->

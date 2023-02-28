@@ -7,8 +7,10 @@ body{
     background: #2A2734;
     font-family: 'Poppins', sans-serif;
     
-    background-image: linear-gradient(to right, #605e7e, #6b73c1, #37b3cc);
+    background:conic-gradient(at 125% 50%, #b78cf7, #ff7c94, #ffcf0d, #ff7c94, #b78cf7) ;
  background-size: cover;
+ position: relative;
+font-family: cursive;
 } 
 
 * {
@@ -19,3 +21,136 @@ body{
 }
 
 
+button{
+    padding: 5px;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    height: 50px;
+    width: 110px;
+    outline: none;
+    cursor: pointer;
+    font-family: inherit;
+    border-radius: 5px;
+    background: whitesmoke;
+    border: 1px solid lightblue;
+    overflow: hidden;
+    transition: color 1s;
+    
+}
+
+button:hover{
+    color: white;
+    background-color: rgba(0,0,0,0.1);
+}
+button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 150%;
+    height: 100%;
+    background-color: #fff;
+    transform: scaleX(0) skewX(35deg);
+    transform-origin: left;
+    z-index: -1;
+    transition: transform 1s;
+}
+.button:hover::before{
+    transform: scaleX(1) skewX(35deg);
+}
+
+
+#modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+}
+
+#inner_modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#inner_modal textarea{
+    width: 275px;
+    height: 275px;
+    padding: 25px;
+    outline: none;
+    resize: none;
+    font-size: 1.5rem;
+    font-family: inherit;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.9);
+}
+
+#inner_modal i{
+    font-size: 1.5rem;
+    color: rgb(120,63,83);
+    cursor: pointer;
+    margin-top: -250px;
+    margin-left: -22px;
+}
+
+#inner_modal i:hover{
+    color: rgb(173, 15, 15);
+}
+
+.container1{
+    
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+#header{
+    color: wheat;
+    padding: 0 20px;
+    min-height: 70px;
+    text-shadow: 1px 1px black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+h1{
+    color: #2A2734;
+}
+
+.fas{
+    color:chartreuse
+}
+
+#all_notes{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 10px;
+}
+
+.note{
+    width: 300px;
+    height: 300px;
+    transition: 2s;
+    cursor: pointer;
+    overflow-wrap: break-word;
+    box-shadow: 0px 10px 24px 0px rgba(0,0,0,0.75);
+}
+
+.note h1{
+    font-size: 1.5rem;
+}
+
+.details{
+    margin-top: 25px;
+    padding: 0 15px;
+    font-size: 1.5rem;
+}
+
+.details i{
+    text-shadow: 1px 1px #BBB;
+    cursor: pointer;
+    color: whitesmoke;
+}
