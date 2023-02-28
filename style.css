@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap");
+
+body{
+    padding: 0;
+    margin: 0;
+    
+    background: #2A2734;
+    font-family: 'Poppins', sans-serif;
+    
+    background-image: linear-gradient(to right, #605e7e, #6b73c1, #37b3cc);
+ background-size: cover;
+} 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
